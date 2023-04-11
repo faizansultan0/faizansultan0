@@ -1,9 +1,53 @@
 /* Font Poppins Regular and SemiBold */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
+/* Global Elements */
+/* Global Body */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #0F1624;
+}
+
+/* Global Link Buttons */
+.link-button {
+    padding: 22px 60px;
+    border-radius: 44px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    width: max-content;
+    box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
+    border: 2px solid;
+    border-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    transition: background-image ease-in 0.4s;
+}
+
+.link-button:hover {
+    background-image: none;
+}
+
+/* Global Go to Top Button */
+#top-arrow {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#top-arrow:hover {
+    background-image: none;
 }
 
 /* Header */
@@ -117,33 +161,24 @@ header .header-social-links .social-link:hover {
     margin-bottom: 32px;
 }
 
-.banner .left-content a {
-    padding: 22px 60px;
-    border-radius: 44px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    width: max-content;
-    box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
-    border: 2px solid;
-    border-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    transition: background-image ease-in 0.4s;
-}
-
-.banner .left-content a:hover {
-    background-image: none;
-}
-
 /* Banner Right Content */
 .banner .right-content {
     float: right;
+}
+
+.banner .right-content a {
+    display: none;
 }
 
 
 
 /* Media Queries */
 @media screen and (max-width: 1400px){
+    /* Global Elements */
+    .link-button {
+        padding: 18px 48px;
+    }
+
     /* Banner */
     /* Banner Left Content */
     .banner .left-content h1 {
@@ -152,10 +187,6 @@ header .header-social-links .social-link:hover {
 
     .banner .left-content h2 {
         font-size: 54px;
-    }
-
-    .banner .left-content a {
-        padding: 18px 48px;
     }
 }
 
@@ -194,9 +225,92 @@ header .header-social-links .social-link:hover {
         justify-content: space-between;
         gap: unset;
     }
+
+    
+    /* Banner */
+    .banner .content {
+        position: relative;
+    }
+
+    /* Banner Left Part */
+    .banner .left-content {
+        justify-content: flex-end;
+        height: 350px;
+    }
+
+    .banner .left-content a {
+        display: none;
+    }
+
+    /* Banner Right Part */
+    .banner .right-content img {
+        width: 620px;
+    }
+
+    .banner .right-content a {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    /* Banner */
+    /* Banner Right Part */
+    .banner .right-content img {
+        width: 550px;
+    }
+
+    .banner .right-content a {
+        bottom: 44px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    /* Banner */
+    /* Banner Left Content */
+    .banner .left-content h1 {
+        font-size: 44px;
+    }
+
+    .banner .left-content h2 {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    /* Global Elements */
+    .link-button {
+        padding: 16px 44px;
+        font-size: 16px;
+    }
+
+    /* Banner */
+    /* Banner Left Content */
+    .banner .left-content {
+        height: 300px;
+    }
+    .banner .left-content h1 {
+        font-size: 35px;
+    }
+
+    .banner .left-content h2 {
+        font-size: 35px;
+    }
+
+    .banner .left-content p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 370px){
+    /* Global Elements */
+    .link-button {
+        padding: 12px 36px;
+    }
+
     /* Header */
 
     /* Header Logo */
@@ -216,5 +330,26 @@ header .header-social-links .social-link:hover {
     /* Header Social Links */
     header .header-social-links .social-link {
         font-size: 22px;
+    }
+
+    /* Banner */
+    /* Banner Left Content */
+    .banner .left-content h1 {
+        font-size: 26px;
+    }
+
+    .banner .left-content h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .banner .left-content p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* Banner Right Content */
+    .banner .right-content img {
+        width: 400px;
     }
 }
