@@ -81,9 +81,102 @@ header .header-social-links .social-link:hover {
     background-size: 100%;
 }
 
+/* Banner */
+
+/* Banner Left Content */
+.banner .left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.banner .left-content h1 {
+    font-weight: 600;
+    font-size: 64px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.banner .left-content h2 {
+    font-size: 64px;
+    color: white;
+    font-weight: 600;
+    z-index: 1;
+    margin-bottom: 26px;
+}
+
+.banner .left-content p {
+    color: #929EB0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 32px;
+}
+
+.banner .left-content a {
+    padding: 22px 60px;
+    border-radius: 44px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    width: max-content;
+    box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
+    border: 2px solid;
+    border-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    transition: background-image ease-in 0.4s;
+}
+
+.banner .left-content a:hover {
+    background-image: none;
+}
+
+/* Banner Right Content */
+.banner .right-content {
+    float: right;
+}
+
+
+
 /* Media Queries */
+@media screen and (max-width: 1400px){
+    /* Banner */
+    /* Banner Left Content */
+    .banner .left-content h1 {
+        font-size: 54px;
+    }
+
+    .banner .left-content h2 {
+        font-size: 54px;
+    }
+
+    .banner .left-content a {
+        padding: 18px 48px;
+    }
+}
 
 @media screen and (max-width: 1200px){
+    /* Banner */
+    /* Banner Left Content */
+    .banner .left-content h1 {
+        font-size: 46px;
+    }
+
+    .banner .left-content h2 {
+        font-size: 46px;
+    }
+
+    /* Banner Right Content */
+    .banner .right-content img {
+        width: 650px;
+    }
+}
+
+@media screen and (max-width: 991.8px){
     /* Header */
     header .navbar-parent {
         flex-wrap: wrap;
