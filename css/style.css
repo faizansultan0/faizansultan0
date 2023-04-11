@@ -208,6 +208,15 @@ header .header-social-links .social-link:hover {
 }
 
 @media screen and (max-width: 991.8px){
+    /* Global Go to Top Button */
+    #top-arrow {
+        bottom: 30px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
     /* Header */
     header .navbar-parent {
         flex-wrap: wrap;
@@ -311,6 +320,15 @@ header .header-social-links .social-link:hover {
         padding: 12px 36px;
     }
 
+    /* Global Go to Top Button */
+    #top-arrow {
+        bottom: 10px;
+        right: 14px;
+        width: 34px;
+        height: 34px;
+        font-size: 16px;
+    }
+
     /* Header */
 
     /* Header Logo */
@@ -334,6 +352,10 @@ header .header-social-links .social-link:hover {
 
     /* Banner */
     /* Banner Left Content */
+    .banner .left-content {
+        height: 260px;
+    }
+
     .banner .left-content h1 {
         font-size: 26px;
     }
