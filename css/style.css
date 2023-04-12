@@ -119,11 +119,28 @@ header .header-social-links .social-link {
     /* transition: color ease-out 0.3s; */
 }
 
-header .header-social-links .social-link:hover {
-    /* background-image: linear-gradient(270deg, #31CBE5 0%, #8796EF 66.67%, #B27BF4 100%);
-    -webkit-text-fill-color: transparent; */
-    background-size: 100%;
+
+header .header-social-links .social-link:hover .fa-linkedin::before {
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+header .header-social-links .social-link:hover .fa-facebook::before {
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .header-social-links .social-link:hover .fa-github::before {
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 /* Banner */
 
@@ -168,6 +185,79 @@ header .header-social-links .social-link:hover {
 
 .banner .right-content a {
     display: none;
+}
+
+
+/* Projects */
+/* Projects Heading */
+.projects .content {
+    padding-top: 100px;
+}
+
+.projects .projects-heading {
+    font-size: 46px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 65px;
+}
+
+/* Projects Cards */
+.projects .projects-card {
+    padding: 28px;
+    border: 2px solid;
+    border-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%) 1;
+    margin: 0 4px;
+}
+
+.projects .projects-card .img-holder {
+    height: 300px;
+    margin-bottom: 44px;
+    overflow: hidden;
+}
+
+.projects .projects-card .img-holder:hover img {
+    transform: scale(1.2);
+}
+
+.projects .projects-card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.3s ease-in;
+}
+
+.projects .projects-card .card-detail {
+    min-height: 230px;
+}
+
+.projects .projects-card h3 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 600;
+    color: white;
+}
+
+.projects .projects-card p {
+    color: #929EB0;
+    font-size: 18px;
+}
+
+.projects .projects-card .buttons {
+    list-style-type: none;
+    padding-left: 0!important;
+    display: flex;
+    justify-content: space-between;
+}
+
+.projects .projects-card li {
+    display: inline-block;
+}
+
+.projects .projects-card .github-link {
+    background: none;
+    box-shadow: none;
+    border: 1px solid white;
 }
 
 
