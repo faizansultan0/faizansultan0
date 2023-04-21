@@ -202,16 +202,20 @@ header .header-social-links .social-link:hover .fa-github::before {
 }
 
 /* Projects Cards */
+.project-card-parent {
+    padding: 0 18px;
+}
+
 .projects .projects-card {
     padding: 28px;
     border: 2px solid;
     border-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%) 1;
-    margin: 0 4px;
+    /* margin: 0 4px; */
 }
 
 .projects .projects-card .img-holder {
-    height: 300px;
-    margin-bottom: 44px;
+    height: 280px;
+    margin-bottom: 24px;
     overflow: hidden;
 }
 
@@ -228,7 +232,7 @@ header .header-social-links .social-link:hover .fa-github::before {
 }
 
 .projects .projects-card .card-detail {
-    min-height: 230px;
+    min-height: 190px;
 }
 
 .projects .projects-card h3 {
@@ -246,6 +250,7 @@ header .header-social-links .social-link:hover .fa-github::before {
 .projects .projects-card .buttons {
     list-style-type: none;
     padding-left: 0!important;
+    margin-bottom: 0;
     display: flex;
     justify-content: space-between;
 }
@@ -278,6 +283,21 @@ header .header-social-links .social-link:hover .fa-github::before {
     .banner .left-content h2 {
         font-size: 54px;
     }
+
+
+    /* Projects */
+    /* Projects Cards */
+    .projects .projects-card h3 {
+        font-size: 26px;
+    }
+
+    .projects .projects-card p {
+        font-size: 17px;
+    }
+
+    .projects .projects-card .link-button {
+        padding: 14px 34px;
+    }
 }
 
 @media screen and (max-width: 1200px){
@@ -294,6 +314,30 @@ header .header-social-links .social-link:hover .fa-github::before {
     /* Banner Right Content */
     .banner .right-content img {
         width: 650px;
+    }
+
+
+    /* PROJECTS */
+    /* Projects Cards */
+    .projects .projects-card {
+        padding: 23px;
+    }
+    .projects .projects-card .card-detail {
+        min-height: 190px;
+    }
+
+    .projects .projects-card h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .projects .projects-card p {
+        font-size: 16px;
+    }
+
+    .projects .projects-card .link-button {
+        padding: 12px 22px;
+        font-size: 16px;
     }
 }
 
@@ -352,6 +396,35 @@ header .header-social-links .social-link:hover .fa-github::before {
         left: 0;
         bottom: 50px;
     }
+
+
+    /* PROJECTS */
+    /* Projects Cards */
+    .projects .project-card-parent {
+        padding: 0 8px;
+    }
+
+    .projects .projects-card {
+        padding: 23px;
+    }
+
+    .projects .projects-card .img-holder {
+        height: 190px;
+        margin-bottom: 18px;
+    } 
+    .projects .projects-card .card-detail {
+        min-height: 190px;
+    }
+
+    .projects .projects-card h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .projects .projects-card .link-button {
+        font-size: 15px;
+        padding: 12px 14px;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -365,6 +438,34 @@ header .header-social-links .social-link:hover .fa-github::before {
     .banner .right-content a {
         bottom: 44px;
     }
+
+
+    /* PROJECTS */
+    /* Projects Cards */
+    .projects .project-card-parent {
+        padding: 0 8px;
+    }
+
+    .projects .projects-card {
+        padding: 23px;
+    }
+
+    .projects .projects-card .img-holder {
+        height: 210px;
+        margin-bottom: 18px;
+    } 
+    .projects .projects-card .card-detail {
+        min-height: 180px;
+    }
+
+    .projects .projects-card h3 {
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    .projects .projects-card .link-button {
+        padding: 14px 24px;
+    }
 }
 
 @media screen and (max-width: 576px){
@@ -376,6 +477,20 @@ header .header-social-links .social-link:hover .fa-github::before {
 
     .banner .left-content h2 {
         font-size: 44px;
+    }
+
+
+    /* PROJECTS */
+    .projects .content {
+        padding-top: 0;
+    }
+    /* Projects Cards */
+    .projects .project-card-parent {
+        padding: 0 18px;
+    }
+
+    .projects .slick-dots li button:before {
+        color: white;
     }
 }
 
@@ -401,6 +516,30 @@ header .header-social-links .social-link:hover .fa-github::before {
 
     .banner .left-content p {
         font-size: 16px;
+    }
+
+    /* PROJECTS */
+    .projects .content {
+        padding-top: 0;
+    }
+
+    .projects .projects-heading {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    /* Projects Cards */
+    .projects .project-card-parent {
+        padding:  0 8px;
+    }
+
+    .projects .projects-card .img-holder {
+        height: 160px;
+    } 
+
+    .projects .projects-card .link-button {
+        padding: 12px 18px;
+        font-size: 14px;
     }
 }
 
@@ -463,5 +602,41 @@ header .header-social-links .social-link:hover .fa-github::before {
     /* Banner Right Content */
     .banner .right-content img {
         width: 400px;
+    }
+
+    /* PROJECTS */
+    .projects .projects-heading {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    /* Projects Cards */
+    .projects .project-card-parent {
+        padding: 0 4px;
+    }
+
+    .projects .projects-card {
+        padding: 14px;
+    }
+    .projects .projects-card .img-holder {
+        height: 120px;
+    }
+
+    .projects .projects-card .card-detail{
+        min-height: 160px;
+    }
+
+    .projects .projects-card h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .projects .projects-card p {
+        font-size: 14px;
+    }
+
+    .projects .projects-card .link-button {
+        font-size: 13px;
+        padding: 8px 6px;
     }
 }

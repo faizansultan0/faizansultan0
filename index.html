@@ -97,58 +97,64 @@
                         <h2 class="projects-heading">Projects</h2>
 
                         <div class="projects-cards">
-                            <div class="projects-card">
-                                <div class="img-holder">
-                                    <img src="images/alfoadia.jpg" alt="Alfoadia Page" class="img-fluid">
+                            <div class="project-card-parent">
+                                <div class="projects-card">
+                                    <div class="img-holder">
+                                        <img src="images/alfoadia.jpg" alt="Alfoadia Page" class="img-fluid">
+                                    </div>
+                                    <div class="card-detail">
+                                        <h3>Alfoadia | A Construction Company</h3>
+                                        <p>Responsive HTML, CSS Layout for a construction company showing their services.</p>
+                                    </div>
+                                    <ul class="buttons">
+                                        <li>
+                                            <a href="https://faizansultan0.github.io/alfoadia/" target="_blank" class="link-button">Live Preview</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link-button github-link">Check on Github</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="card-detail">
-                                    <h3>Alfoadia | A Construction Company</h3>
-                                    <p>Responsive HTML, CSS Layout for a construction company showing their services.</p>
-                                </div>
-                                <ul class="buttons">
-                                    <li>
-                                        <a href="https://faizansultan0.github.io/alfoadia/" target="_blank" class="link-button">Live Preview</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="link-button github-link">Check on Github</a>
-                                    </li>
-                                </ul>
                             </div>
 
-                            <div class="projects-card">
-                                <div class="img-holder">
-                                    <img src="images/mongul.jpg" alt="Mongul Workspace Providers" class="img-fluid">
+                            <div class="project-card-parent">
+                                <div class="projects-card">
+                                    <div class="img-holder">
+                                        <img src="images/mongul.jpg" alt="Mongul Workspace Providers" class="img-fluid">
+                                    </div>
+                                    <div class="card-detail">
+                                        <h3>Mongul | Workspace Providers</h3>
+                                        <p>Responsive HTML, CSS Layout for a construction company showing their services.</p>
+                                    </div>
+                                    <ul class="buttons">
+                                        <li>
+                                            <a href="https://faizansultan0.github.io/mongul/" target="_blank" class="link-button">Live Preview</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link-button github-link">Check on Github</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="card-detail">
-                                    <h3>Mongul | Workspace Providers</h3>
-                                    <p>Responsive HTML, CSS Layout for a construction company showing their services.</p>
-                                </div>
-                                <ul class="buttons">
-                                    <li>
-                                        <a href="https://faizansultan0.github.io/mongul/" target="_blank" class="link-button">Live Preview</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="link-button github-link">Check on Github</a>
-                                    </li>
-                                </ul>
                             </div>
 
-                            <div class="projects-card">
-                                <div class="img-holder">
-                                    <img src="images/winpanda.jpg" alt="Alfoadia Page" class="img-fluid">
+                            <div class="project-card-parent">
+                                <div class="projects-card">
+                                    <div class="img-holder">
+                                        <img src="images/winpanda.jpg" alt="Alfoadia Page" class="img-fluid">
+                                    </div>
+                                    <div class="card-detail">
+                                        <h3>Winpanda</h3>
+                                        <p>Responsive HTML, CSS Layout for a construction company showing their services.</p>
+                                    </div>
+                                    <ul class="buttons">
+                                        <li>
+                                            <a href="https://faizansultan0.github.io/winpanda/" target="_blank" class="link-button">Live Preview</a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="link-button github-link">Check on Github</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="card-detail">
-                                    <h3>Winpanda</h3>
-                                    <p>Responsive HTML, CSS Layout for a construction company showing their services.</p>
-                                </div>
-                                <ul class="buttons">
-                                    <li>
-                                        <a href="https://faizansultan0.github.io/winpanda/" target="_blank" class="link-button">Live Preview</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="link-button github-link">Check on Github</a>
-                                    </li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -177,33 +183,31 @@
         $('.projects-cards').slick({
             dots: false,
             infinite: true,
-            speed: 300,
+            speed: 200,
             slidesToShow: 2,
             slidesToScroll: 1,
             arrows: true,
             responsive: [
                 {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-                },
-                {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-                },
-                {
-                breakpoint: 480,
+                breakpoint: 768,
                 settings: {
                     slidesToShow: 1,
-                    slidesToScroll: 1
+                    slidesToScroll: 1,
+                    speed: 200,
+                    infinite: true
                 }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        speed: 200,
+                        infinite: true,
+                        autoplay: true,
+                        arrows: false,
+                        dots: true
+                    }
                 }
                 // You can unslick at a given breakpoint now by adding:
                 // settings: "unslick"
