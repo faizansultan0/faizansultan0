@@ -470,7 +470,7 @@ header .header-social-links .social-link:hover .fa-github::before {
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
     /* Banner */
     /* Banner Right Part */
@@ -527,6 +527,12 @@ header .header-social-links .social-link:hover .fa-github::before {
     .projects .content {
         padding-top: 0;
     }
+
+    .projects .projects-heading {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
     /* Projects Cards */
     .projects .project-card-parent {
         padding: 0 18px;
@@ -534,6 +540,21 @@ header .header-social-links .social-link:hover .fa-github::before {
 
     .projects .slick-dots li button:before {
         color: white;
+    }
+
+    /* Technologies */
+    /* Technologies Heading */
+    .technologies .technologies-heading {
+        font-size: 42px;
+        margin-bottom: 40px;
+    }
+
+    .technologies .skill-name {
+        font-size: 26px;
+    }
+
+    .technologies .skill-level {
+        font-size: 17px;
     }
 }
 
@@ -566,11 +587,6 @@ header .header-social-links .social-link:hover .fa-github::before {
         padding-top: 0;
     }
 
-    .projects .projects-heading {
-        font-size: 42px;
-        margin-bottom: 40px;
-    }
-
     /* Projects Cards */
     .projects .project-card-parent {
         padding:  0 8px;
@@ -583,6 +599,30 @@ header .header-social-links .social-link:hover .fa-github::before {
     .projects .projects-card .link-button {
         padding: 12px 18px;
         font-size: 14px;
+    }
+
+
+    /* Technologies */
+    /* Technologies Heading */
+    .technologies .technologies-heading {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    .technologies .skill-name {
+        font-size: 22px;
+    }
+
+    .technologies .skill-level {
+        font-size: 16px;
+    }
+
+    .technologies .advanced-skill-div {
+        height: 22px;
+    }
+
+    .technologies .regular-skill-div {
+        height: 22px;
     }
 }
 
@@ -681,5 +721,29 @@ header .header-social-links .social-link:hover .fa-github::before {
     .projects .projects-card .link-button {
         font-size: 13px;
         padding: 8px 6px;
+    }
+
+
+    /* Technologies */
+    /* Technologies Heading */
+    .technologies .technologies-heading {
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+
+    .technologies .skill-name {
+        font-size: 18px;
+    }
+
+    .technologies .skill-level {
+        font-size: 14px;
+    }
+
+    .technologies .advanced-skill-div {
+        height: 20px;
+    }
+
+    .technologies .regular-skill-div {
+        height: 20px;
     }
 }
