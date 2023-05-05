@@ -308,6 +308,53 @@ header .header-social-links .social-link:hover .fa-github::before {
     margin-bottom: 40px;
 }
 
+/* Additional Technologies */
+.additional-technologies .content {
+    padding: 100px 0;
+}
+
+.additional-technologies .additional-technologies-heading {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 60px;
+    color: white;
+    margin-bottom: 65px;
+}
+
+/* Additional Technologies Skills */
+.additional-technologies .additional-skills {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    list-style: circle;
+    padding: 0;
+}
+
+.additional-technologies .additional-skill {
+    display: inline-block;
+    color: white;
+    width: 33.33%;
+    position: relative;
+    padding-left: 24px;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.additional-technologies .additional-skill::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: linear-gradient(326.6deg, #13ADC7 21.25%, #6978D1 58.73%, #945DD6 77.47%);
+    box-shadow: 0px 7px 30px rgba(19, 173, 199, 0.3);
+}
+
 
 
 /* Media Queries */
@@ -381,6 +428,16 @@ header .header-social-links .social-link:hover .fa-github::before {
     .projects .projects-card .link-button {
         padding: 12px 22px;
         font-size: 16px;
+    }
+
+    /* Additional Technologies */
+    .additional-technologies .additional-technologies-heading {
+        font-size: 44px;
+    }
+
+    /* Additional Technologies Skills */
+    .additional-technologies .additional-skill {
+        font-size: 26px;
     }
 }
 
@@ -468,6 +525,17 @@ header .header-social-links .social-link:hover .fa-github::before {
         font-size: 15px;
         padding: 12px 14px;
     }
+
+    /* Additional Technologies */
+    .additional-technologies .additional-technologies-heading {
+        font-size: 40px;
+    }
+
+    /* Additional Technologies Skills */
+    .additional-technologies .additional-skill {
+        width: 50%;
+        font-size: 24px;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -508,6 +576,22 @@ header .header-social-links .social-link:hover .fa-github::before {
 
     .projects .projects-card .link-button {
         padding: 14px 24px;
+    }
+
+    /* Additional Technologies */
+    .additional-technologies .content {
+        padding: 70px 0;
+    }
+    .additional-technologies .additional-technologies-heading {
+        font-size: 38px;
+        line-height: 54px;
+        margin-bottom: 52px;
+    }
+
+    /* Additional Technologies Skills */
+    .additional-technologies .additional-skill {
+        width: 50%;
+        font-size: 22px;
     }
 }
 
@@ -555,6 +639,19 @@ header .header-social-links .social-link:hover .fa-github::before {
 
     .technologies .skill-level {
         font-size: 17px;
+    }
+
+    /* Additional Technologies */
+    .additional-technologies .additional-technologies-heading {
+        font-size: 36px;
+        line-height: 50px;
+        margin-bottom: 46px;
+    }
+
+    /* Additional Technologies Skills */
+    .additional-technologies .additional-skill {
+        width: 100%;
+        margin-bottom: 24px;
     }
 }
 
@@ -623,6 +720,22 @@ header .header-social-links .social-link:hover .fa-github::before {
 
     .technologies .regular-skill-div {
         height: 22px;
+    }
+
+    /* Additional Technologies */
+    .additional-technologies .content {
+        padding: 50px 0;
+    }
+
+    .additional-technologies .additional-technologies-heading {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 46px;
+    }
+
+    /* Additional Technologies Skills */
+    .additional-technologies .additional-skill {
+        margin-bottom: 18px;
     }
 }
 
@@ -745,5 +858,21 @@ header .header-social-links .social-link:hover .fa-github::before {
 
     .technologies .regular-skill-div {
         height: 20px;
+    }
+
+    /* Additional Technologies */
+    .additional-technologies .content {
+        padding: 20px 0;
+    }
+
+    .additional-technologies .additional-technologies-heading {
+        font-size: 24px;
+        line-height: 34px;
+        margin-bottom: 36px;
+    }
+
+    /* Additional Technologies Skills */
+    .additional-technologies .additional-skill {
+        margin-bottom: 18px;
     }
 }
