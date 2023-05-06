@@ -368,6 +368,89 @@ header .header-social-links .social-link:hover .fa-github::before {
     font-size: 22px;
 }
 
+/* Footer */
+/* Footer Feel Free Para */
+.footer .content {
+    padding: 40px 0;
+}
+.footer .feel-free-para {
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 18px;
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Footer Mail */
+.footer .footer-mail {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer-mail:hover {
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Footer Phone Number */
+.footer .footer-phone-no {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer-phone-no:hover {
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+/* Footer Social Links */
+.footer .footer-social-links {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+footer .footer-social-link-list {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer .footer-social-link {
+    font-size: 22px;
+    color: white;
+}
+
+footer .footer-social-link:hover .fa-linkedin::before {
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer .footer-social-link:hover .fa-facebook::before {
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer .footer-social-link:hover .fa-github::before {
+    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 
 
 /* Media Queries */
@@ -460,6 +543,27 @@ header .header-social-links .social-link:hover .fa-github::before {
     }
 
     .about-me .about-me-para {
+        font-size: 18px;
+    }
+
+    /* Footer */
+    /* Footer Feel Free Para */
+    .footer .feel-free-para {
+        font-size: 16px;
+    }
+
+    /* Footer Mail */
+    .footer .footer-mail {
+        font-size: 16px;
+    }
+
+    /* Footer Phone Number */
+    .footer .footer-phone-no {
+        font-size: 16px;
+    }
+
+    /* Footer Social Links */
+    .footer .footer-social-link {
         font-size: 18px;
     }
 }
@@ -567,6 +671,11 @@ header .header-social-links .social-link:hover .fa-github::before {
 
     .about-me .about-me-para {
         font-size: 17px;
+    }
+
+    /* Footer */
+    .footer .content .row > div {
+        margin-bottom: 10px;
     }
 }
 
@@ -777,6 +886,15 @@ header .header-social-links .social-link:hover .fa-github::before {
 
     .about-me .about-me-para {
         font-size: 17px;
+    }
+
+    /* Footer */
+    .footer .content .row > div:nth-child(2) {
+        order: 3;
+    }
+
+    footer .content .row > div:nth-child(3) {
+        order: 2;
     }
 }
 
