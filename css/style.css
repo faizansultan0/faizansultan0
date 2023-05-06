@@ -887,15 +887,6 @@ footer .footer-social-link:hover .fa-github::before {
     .about-me .about-me-para {
         font-size: 17px;
     }
-
-    /* Footer */
-    .footer .content .row > div:nth-child(2) {
-        order: 3;
-    }
-
-    footer .content .row > div:nth-child(3) {
-        order: 2;
-    }
 }
 
 @media screen and (max-width: 370px){
