@@ -355,6 +355,19 @@ header .header-social-links .social-link:hover .fa-github::before {
     box-shadow: 0px 7px 30px rgba(19, 173, 199, 0.3);
 }
 
+/* About me */
+.about-me .about-me-heading {
+    font-size: 46px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 65px;
+}
+
+.about-me .about-me-para {
+    color: #929EB0;
+    font-size: 22px;
+}
+
 
 
 /* Media Queries */
@@ -438,6 +451,16 @@ header .header-social-links .social-link:hover .fa-github::before {
     /* Additional Technologies Skills */
     .additional-technologies .additional-skill {
         font-size: 26px;
+    }
+
+    /* About me */
+    .about-me .about-me-heading {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .about-me .about-me-para {
+        font-size: 18px;
     }
 }
 
@@ -535,6 +558,15 @@ header .header-social-links .social-link:hover .fa-github::before {
     .additional-technologies .additional-skill {
         width: 50%;
         font-size: 24px;
+    }
+
+    /* About me */
+    .about-me .about-me-heading {
+        margin-bottom: 36px;
+    }
+
+    .about-me .about-me-para {
+        font-size: 17px;
     }
 }
 
@@ -737,6 +769,15 @@ header .header-social-links .social-link:hover .fa-github::before {
     .additional-technologies .additional-skill {
         margin-bottom: 18px;
     }
+
+    /* About me */
+    .about-me .about-me-heading {
+        margin-bottom: 28px;
+    }
+
+    .about-me .about-me-para {
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 370px){
@@ -801,6 +842,10 @@ header .header-social-links .social-link:hover .fa-github::before {
     }
 
     /* PROJECTS */
+    .projects .content {
+        padding-bottom: 50px;
+    }
+
     .projects .projects-heading {
         font-size: 40px;
         margin-bottom: 30px;
@@ -874,5 +919,15 @@ header .header-social-links .social-link:hover .fa-github::before {
     /* Additional Technologies Skills */
     .additional-technologies .additional-skill {
         margin-bottom: 18px;
+    }
+
+    /* About me */
+    .about-me .about-me-heading {
+        font-size: 38px;
+        margin-bottom: 20px;
+    }
+
+    .about-me .about-me-para {
+        font-size: 16px;
     }
 }
