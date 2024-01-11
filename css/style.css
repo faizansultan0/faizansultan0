@@ -1,1093 +1,1155 @@
 /* Font Poppins Regular and SemiBold */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
 /* Global Elements */
 /* Global Body */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #0F1624;
+  font-family: "Poppins", sans-serif;
+  background-color: #0f1624;
 }
 
 /* Global Link Buttons */
 .link-button {
-    padding: 22px 60px;
-    border-radius: 44px;
-    color: white;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    /* background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%); */
-    width: max-content;
-    box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
-    border: 2px solid;
-    border-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    position: relative;
-    z-index: 1;
-    /* transition: background-image ease-in 0.4s; */
+  padding: 22px 60px;
+  border-radius: 44px;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  /* background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%); */
+  width: max-content;
+  box-shadow: 0px 10px 30px rgba(0, 178, 255, 0.35);
+  border: 2px solid;
+  border-image: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  position: relative;
+  z-index: 1;
+  /* transition: background-image ease-in 0.4s; */
 }
 
 .link-button::before {
-    content: ' ';
-    position:absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    top: 0;
-    left: 0;
-    border-radius: 44px;
-    z-index: -1;
-    transition: opacity ease 1s;
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  top: 0;
+  left: 0;
+  border-radius: 44px;
+  z-index: -1;
+  transition: opacity ease 1s;
 }
 
 .link-button:hover::before {
-    opacity: 50%;
+  opacity: 50%;
 }
-
-
 
 /* Global Go to Top Button */
 #top-arrow {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    background-size: cover;
-    border-radius: 50%;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  background-image: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  background-size: cover;
+  border-radius: 50%;
 }
 
 #top-arrow:hover {
-    background-image: none;
+  background-image: none;
 }
 
 /* Header */
 header {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 header .navbar-parent {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 }
 
 /* Header Logo */
 header .logo {
-    display: inline-block;
+  display: inline-block;
 }
 
 header .logo a {
-    display: inline-block;
+  display: inline-block;
 }
 
 /* Header Navbar */
 header .header-nav-ul {
-    list-style-type: none;
-    display: flex;
-    margin-bottom: 0;
-    padding-left: 0;
-    gap: 80px;
+  list-style-type: none;
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+  gap: 80px;
 }
 
 header .nav-item {
-    display: inline-block;
+  display: inline-block;
 }
 
 header .nav-item .nav-link {
-    padding: 0!important;
+  padding: 0 !important;
 }
 
 header .nav-item .nav-link {
-    color:  white;
-    font-size: 18px;
-    font-weight: 500;
-    border-bottom: 2px solid transparent;
-    position: relative;
-    /* transition: border-image-width ease-out 0.2s; */
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  /* transition: border-image-width ease-out 0.2s; */
 }
 
 header .nav-item .nav-link::before {
-    content: ' ';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-bottom: 2px solid;
-    opacity: 0;
-    transition: opacity 1s ease;
-    border-image: linear-gradient(90deg, rgba(19,173,199,1) 0%, rgba(105,120,209,1) 60%, rgba(148,93,214,1) 100%);
-    border-image-slice: 1;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid;
+  opacity: 0;
+  transition: opacity 1s ease;
+  border-image: linear-gradient(
+    90deg,
+    rgba(19, 173, 199, 1) 0%,
+    rgba(105, 120, 209, 1) 60%,
+    rgba(148, 93, 214, 1) 100%
+  );
+  border-image-slice: 1;
 }
 
 header .nav-item .nav-link:hover::before {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 /* Header Social Links */
 header .header-social-links {
-    list-style-type: none;
-    display: flex;
-    gap: 23px;
+  list-style-type: none;
+  display: flex;
+  gap: 23px;
 }
 
 header .header-social-links .link-item {
-    display: inline-block;
+  display: inline-block;
 }
 
 header .header-social-links .social-link {
-    color: white;
-    display: inline-block;
-    font-size: 27px;
-    line-height: 27px;
-    position: relative;
-    z-index: 1;
-    /* transition: color ease-out 0.3s; */
+  color: white;
+  display: inline-block;
+  font-size: 27px;
+  line-height: 27px;
+  position: relative;
+  z-index: 1;
+  /* transition: color ease-out 0.3s; */
 }
-
 
 header .header-social-links .social-link .social-icon::before {
-    color: white;
+  color: white;
 }
-
 
 header .header-social-links .social-link:hover .social-icon::before {
-    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
 
 /* Banner */
 
 /* Banner Left Content */
 .banner .left-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 .banner .left-content h1 {
-    font-weight: 600;
-    font-size: 64px;
-    margin-bottom: 20px;
-    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+  font-weight: 600;
+  font-size: 64px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .banner .left-content h2 {
-    font-size: 64px;
-    color: white;
-    font-weight: 600;
-    z-index: 1;
-    margin-bottom: 26px;
+  font-size: 64px;
+  color: white;
+  font-weight: 600;
+  z-index: 1;
+  margin-bottom: 26px;
 }
 
 .banner .left-content p {
-    color: #929EB0;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 32px;
+  color: #929eb0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 32px;
 }
 
 /* Banner Right Content */
 .banner .right-content {
-    float: right;
+  float: right;
 }
 
 .banner .right-content a {
-    display: none;
+  display: none;
 }
-
 
 /* Projects */
 /* Projects Heading */
 .projects .content {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 
 .projects .projects-heading {
-    font-size: 46px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 65px;
+  font-size: 46px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 65px;
 }
 
 /* Projects Cards */
 .project-card-parent {
-    padding: 0 18px;
+  padding: 0 18px;
 }
 
 .projects .projects-card {
-    padding: 28px;
-    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    background-origin: padding-box;
-    border-radius: 25px;
-    position: relative;
-    z-index: 1;
+  padding: 28px;
+  background-image: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  background-origin: padding-box;
+  border-radius: 25px;
+  position: relative;
+  z-index: 1;
 }
 
 .projects .projects-card::after {
-    position: absolute;
-    content: '';
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    border-radius: 25px;
-    z-index: -1;
-    background-color: #0F1624;
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  border-radius: 25px;
+  z-index: -1;
+  background-color: #0f1624;
 }
 
 .projects .projects-card .img-holder {
-    height: 280px;
-    margin-bottom: 24px;
-    overflow: hidden;
+  height: 280px;
+  margin-bottom: 24px;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .projects .projects-card .img-holder:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .projects .projects-card img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-    transition: transform 0.3s ease-in;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.3s ease-in;
 }
 
 .projects .projects-card .card-detail {
-    min-height: 190px;
+  min-height: 190px;
 }
 
 .projects .projects-card h3 {
-    font-size: 30px;
-    line-height: 45px;
-    font-weight: 600;
-    color: white;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 600;
+  color: white;
 }
 
 .projects .projects-card p {
-    color: #929EB0;
-    font-size: 18px;
+  color: #929eb0;
+  font-size: 18px;
 }
 
 .projects .projects-card .buttons {
-    list-style-type: none;
-    padding-left: 0!important;
-    margin-bottom: 0;
-    display: flex;
-    justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0 !important;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
 }
 
 .projects .projects-card li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .projects .projects-card .github-link {
-    background: none;
-    box-shadow: none;
-    border: 1px solid white;
+  background: none;
+  box-shadow: none;
+  border: 1px solid white;
 }
 
 .github-link.link-button::before {
-    opacity: 0;
+  opacity: 0;
 }
 
 .github-link.link-button:hover::before {
-    opacity: 100%;
+  opacity: 100%;
 }
-
 
 /* Technologies */
 /* Technologies Heading */
 .technologies .technologies-heading {
-    font-size: 46px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 65px;
+  font-size: 46px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 65px;
 }
 
 /* Technologies Skills */
 .technologies .skills-head {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .technologies .skill-name {
-    font-weight: 600;
-    font-size: 30px;
-    color: white;
+  font-weight: 600;
+  font-size: 30px;
+  color: white;
 }
 
 .technologies .skill-level {
-    color: white;
-    font-size: 18px;
+  color: white;
+  font-size: 18px;
 }
 
 .technologies .advanced-skill-div {
-    height: 24px;
-    width: 80%;
-    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    border-radius: 25px;
-    margin-bottom: 40px;
+  height: 24px;
+  width: 80%;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  border-radius: 25px;
+  margin-bottom: 40px;
 }
 
 .technologies .regular-skill-div {
-    height: 24px;
-    width: 65%;
-    background: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    border-radius: 25px;
-    margin-bottom: 40px;
+  height: 24px;
+  width: 65%;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  border-radius: 25px;
+  margin-bottom: 40px;
 }
 
 /* Additional Technologies */
 .additional-technologies .content {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 
 .additional-technologies .additional-technologies-heading {
-    font-size: 46px;
-    font-weight: 600;
-    line-height: 60px;
-    color: white;
-    margin-bottom: 65px;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 60px;
+  color: white;
+  margin-bottom: 65px;
 }
 
 /* Additional Technologies Skills */
 .additional-technologies .additional-skills {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    list-style: circle;
-    padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  list-style: circle;
+  padding: 0;
 }
 
 .additional-technologies .additional-skill {
-    display: inline-block;
-    color: white;
-    width: 33.33%;
-    position: relative;
-    padding-left: 24px;
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 30px;
+  display: inline-block;
+  color: white;
+  width: 33.33%;
+  position: relative;
+  padding-left: 24px;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .additional-technologies .additional-skill::before {
-    content: "";
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: linear-gradient(326.6deg, #13ADC7 21.25%, #6978D1 58.73%, #945DD6 77.47%);
-    box-shadow: 0px 7px 30px rgba(19, 173, 199, 0.3);
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: linear-gradient(
+    326.6deg,
+    #13adc7 21.25%,
+    #6978d1 58.73%,
+    #945dd6 77.47%
+  );
+  box-shadow: 0px 7px 30px rgba(19, 173, 199, 0.3);
 }
 
 /* About me */
 .about-me .about-me-heading {
-    font-size: 46px;
-    font-weight: 600;
-    color: white;
-    margin-bottom: 65px;
+  font-size: 46px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 65px;
 }
 
 .about-me .about-me-para {
-    text-align: justify;
-    color: #929EB0;
-    font-size: 22px;
+  text-align: justify;
+  color: #929eb0;
+  font-size: 22px;
 }
 
 /* Footer */
 /* Footer Feel Free Para */
 .footer .content {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 .footer .feel-free-para {
-    font-weight: 500;
-    margin-bottom: 0;
-    font-size: 18px;
-    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 18px;
+  background-image: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /* Footer Mail */
 .footer .footer-mail {
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
-    background: transparent;
-    /* transition: all 1s ease; */
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  background: transparent;
+  /* transition: all 1s ease; */
 }
 
 .footer .footer-mail:hover {
-    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    transition: background-image 1s ease, -webkit-text-fill-color 1s ease, -webkit-background-clip 1s ease;
+  background-image: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  transition: background-image 1s ease, -webkit-text-fill-color 1s ease,
+    -webkit-background-clip 1s ease;
 }
 
 /* Footer Phone Number */
 .footer .footer-phone-no {
-    font-size: 18px;
-    font-weight: 500;
-    color: white;
-    text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
 }
 
 .footer .footer-phone-no:hover {
-    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
+  background-image: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /* Footer Social Links */
 .footer .footer-social-links {
-    padding-left: 0;
-    list-style: none;
-    margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
 }
 
 footer .footer-social-link-list {
-    display: inline-block;
-    margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 .footer .footer-social-link {
-    font-size: 22px;
-    color: white;
+  font-size: 22px;
+  color: white;
 }
 
 footer .footer-social-link:hover .fa-linkedin::before {
-    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer .footer-social-link:hover .fa-facebook::before {
-    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 footer .footer-social-link:hover .fa-github::before {
-    background-image: linear-gradient(270deg, #13ADC7 0%, #6978D1 66.67%, #945DD6 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-
-
 
 /* Media Queries */
-@media screen and (max-width: 1400px){
-    /* Global Elements */
-    .link-button {
-        padding: 18px 48px;
-    }
+@media screen and (max-width: 1400px) {
+  /* Global Elements */
+  .link-button {
+    padding: 18px 48px;
+  }
 
-    /* Banner */
-    /* Banner Left Content */
-    .banner .left-content h1 {
-        font-size: 54px;
-    }
+  /* Banner */
+  /* Banner Left Content */
+  .banner .left-content h1 {
+    font-size: 54px;
+  }
 
-    .banner .left-content h2 {
-        font-size: 54px;
-    }
+  .banner .left-content h2 {
+    font-size: 54px;
+  }
 
+  /* Projects */
+  /* Projects Cards */
+  .projects .projects-card h3 {
+    font-size: 26px;
+  }
 
-    /* Projects */
-    /* Projects Cards */
-    .projects .projects-card h3 {
-        font-size: 26px;
-    }
+  .projects .projects-card p {
+    font-size: 17px;
+  }
 
-    .projects .projects-card p {
-        font-size: 17px;
-    }
-
-    .projects .projects-card .link-button {
-        padding: 14px 34px;
-    }
+  .projects .projects-card .link-button {
+    padding: 14px 34px;
+  }
 }
 
-@media screen and (max-width: 1200px){
-    /* Banner */
-    /* Banner Left Content */
-    .banner .left-content h1 {
-        font-size: 46px;
-    }
+@media screen and (max-width: 1200px) {
+  /* Banner */
+  /* Banner Left Content */
+  .banner .left-content h1 {
+    font-size: 46px;
+  }
 
-    .banner .left-content h2 {
-        font-size: 46px;
-    }
+  .banner .left-content h2 {
+    font-size: 46px;
+  }
 
-    /* Banner Right Content */
-    .banner .right-content img {
-        width: 650px;
-    }
+  /* Banner Right Content */
+  .banner .right-content img {
+    width: 650px;
+  }
 
+  /* PROJECTS */
+  /* Projects Cards */
+  .projects .projects-card {
+    padding: 23px;
+  }
+  .projects .projects-card .card-detail {
+    min-height: 190px;
+  }
 
-    /* PROJECTS */
-    /* Projects Cards */
-    .projects .projects-card {
-        padding: 23px;
-    }
-    .projects .projects-card .card-detail {
-        min-height: 190px;
-    }
+  .projects .projects-card h3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
 
-    .projects .projects-card h3 {
-        font-size: 24px;
-        line-height: 36px;
-    }
+  .projects .projects-card p {
+    font-size: 16px;
+  }
 
-    .projects .projects-card p {
-        font-size: 16px;
-    }
+  .projects .projects-card .link-button {
+    padding: 12px 22px;
+    font-size: 16px;
+  }
 
-    .projects .projects-card .link-button {
-        padding: 12px 22px;
-        font-size: 16px;
-    }
+  /* Additional Technologies */
+  .additional-technologies .additional-technologies-heading {
+    font-size: 44px;
+  }
 
-    /* Additional Technologies */
-    .additional-technologies .additional-technologies-heading {
-        font-size: 44px;
-    }
+  /* Additional Technologies Skills */
+  .additional-technologies .additional-skill {
+    font-size: 26px;
+  }
 
-    /* Additional Technologies Skills */
-    .additional-technologies .additional-skill {
-        font-size: 26px;
-    }
+  /* About me */
+  .about-me .about-me-heading {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
 
-    /* About me */
-    .about-me .about-me-heading {
-        font-size: 40px;
-        margin-bottom: 50px;
-    }
+  .about-me .about-me-para {
+    font-size: 18px;
+  }
 
-    .about-me .about-me-para {
-        font-size: 18px;
-    }
+  /* Footer */
+  /* Footer Feel Free Para */
+  .footer .feel-free-para {
+    font-size: 16px;
+  }
 
-    /* Footer */
-    /* Footer Feel Free Para */
-    .footer .feel-free-para {
-        font-size: 16px;
-    }
+  /* Footer Mail */
+  .footer .footer-mail {
+    font-size: 16px;
+  }
 
-    /* Footer Mail */
-    .footer .footer-mail {
-        font-size: 16px;
-    }
+  /* Footer Phone Number */
+  .footer .footer-phone-no {
+    font-size: 16px;
+  }
 
-    /* Footer Phone Number */
-    .footer .footer-phone-no {
-        font-size: 16px;
-    }
-
-    /* Footer Social Links */
-    .footer .footer-social-link {
-        font-size: 18px;
-    }
+  /* Footer Social Links */
+  .footer .footer-social-link {
+    font-size: 18px;
+  }
 }
 
-@media screen and (max-width: 991.8px){
-    /* Global Go to Top Button */
-    #top-arrow {
-        bottom: 30px;
-        right: 30px;
-        width: 40px;
-        height: 40px;
-        font-size: 18px;
-    }
-    
-    /* Header */
-    header .navbar-parent {
-        flex-wrap: wrap;
-    }
+@media screen and (max-width: 991.8px) {
+  /* Global Go to Top Button */
+  #top-arrow {
+    bottom: 30px;
+    right: 30px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
 
-    /* Header Nav */
-    header .header-nav {
-        order: 3;
-        width: 100%;
-        padding-top: 30px;
-    }
-    
-    header .header-nav-ul {
-        width: 100%;
-        justify-content: space-between;
-        gap: unset;
-    }
+  /* Header */
+  header .navbar-parent {
+    flex-wrap: wrap;
+  }
 
-    
-    /* Banner */
-    .banner .content {
-        position: relative;
-    }
+  /* Header Nav */
+  header .header-nav {
+    order: 3;
+    width: 100%;
+    padding-top: 30px;
+  }
 
-    /* Banner Left Part */
-    .banner .left-content {
-        justify-content: flex-end;
-        height: 350px;
-    }
+  header .header-nav-ul {
+    width: 100%;
+    justify-content: space-between;
+    gap: unset;
+  }
 
-    .banner .left-content a {
-        display: none;
-    }
+  /* Banner */
+  .banner .content {
+    position: relative;
+  }
 
-    /* Banner Right Part */
-    .banner .right-content img {
-        width: 620px;
-    }
+  /* Banner Left Part */
+  .banner .left-content {
+    justify-content: flex-end;
+    height: 350px;
+  }
 
-    .banner .right-content a {
-        display: inline-block;
-        position: absolute;
-        left: 0;
-        bottom: 50px;
-    }
+  .banner .left-content a {
+    display: none;
+  }
 
+  /* Banner Right Part */
+  .banner .right-content img {
+    width: 620px;
+  }
 
-    /* PROJECTS */
-    /* Projects Cards */
-    .projects .project-card-parent {
-        padding: 0 8px;
-    }
+  .banner .right-content a {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+  }
 
-    .projects .projects-card {
-        padding: 23px;
-    }
+  /* PROJECTS */
+  /* Projects Cards */
+  .projects .project-card-parent {
+    padding: 0 8px;
+  }
 
-    .projects .projects-card .img-holder {
-        height: 190px;
-        margin-bottom: 18px;
-    } 
-    .projects .projects-card .card-detail {
-        min-height: 190px;
-    }
+  .projects .projects-card {
+    padding: 23px;
+  }
 
-    .projects .projects-card h3 {
-        font-size: 22px;
-        line-height: 32px;
-    }
+  .projects .projects-card .img-holder {
+    height: 190px;
+    margin-bottom: 18px;
+  }
+  .projects .projects-card .card-detail {
+    min-height: 190px;
+  }
 
-    .projects .projects-card .link-button {
-        font-size: 15px;
-        padding: 12px 14px;
-    }
+  .projects .projects-card h3 {
+    font-size: 22px;
+    line-height: 32px;
+  }
 
-    /* Additional Technologies */
-    .additional-technologies .additional-technologies-heading {
-        font-size: 40px;
-    }
+  .projects .projects-card .link-button {
+    font-size: 15px;
+    padding: 12px 14px;
+  }
 
-    /* Additional Technologies Skills */
-    .additional-technologies .additional-skill {
-        width: 50%;
-        font-size: 24px;
-    }
+  /* Additional Technologies */
+  .additional-technologies .additional-technologies-heading {
+    font-size: 40px;
+  }
 
-    /* About me */
-    .about-me .about-me-heading {
-        margin-bottom: 36px;
-    }
+  /* Additional Technologies Skills */
+  .additional-technologies .additional-skill {
+    width: 50%;
+    font-size: 24px;
+  }
 
-    .about-me .about-me-para {
-        font-size: 17px;
-    }
+  /* About me */
+  .about-me .about-me-heading {
+    margin-bottom: 36px;
+  }
 
-    /* Footer */
-    .footer .content .row > div {
-        margin-bottom: 10px;
-    }
+  .about-me .about-me-para {
+    font-size: 17px;
+  }
+
+  /* Footer */
+  .footer .content .row > div {
+    margin-bottom: 10px;
+  }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
+  /* Banner */
+  /* Banner Right Part */
+  .banner .right-content img {
+    width: 550px;
+  }
 
-    /* Banner */
-    /* Banner Right Part */
-    .banner .right-content img {
-        width: 550px;
-    }
+  .banner .right-content a {
+    bottom: 44px;
+  }
 
-    .banner .right-content a {
-        bottom: 44px;
-    }
+  /* PROJECTS */
+  /* Projects Cards */
+  .projects .project-card-parent {
+    padding: 0 8px;
+  }
 
+  .projects .projects-card {
+    padding: 23px;
+  }
 
-    /* PROJECTS */
-    /* Projects Cards */
-    .projects .project-card-parent {
-        padding: 0 8px;
-    }
+  .projects .projects-card .img-holder {
+    height: 210px;
+    margin-bottom: 18px;
+  }
+  .projects .projects-card .card-detail {
+    min-height: 180px;
+  }
 
-    .projects .projects-card {
-        padding: 23px;
-    }
+  .projects .projects-card h3 {
+    font-size: 22px;
+    line-height: 32px;
+  }
 
-    .projects .projects-card .img-holder {
-        height: 210px;
-        margin-bottom: 18px;
-    } 
-    .projects .projects-card .card-detail {
-        min-height: 180px;
-    }
+  .projects .projects-card .link-button {
+    padding: 14px 24px;
+  }
 
-    .projects .projects-card h3 {
-        font-size: 22px;
-        line-height: 32px;
-    }
+  /* Technologies */
+  .technologies .technologies-heading {
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
 
-    .projects .projects-card .link-button {
-        padding: 14px 24px;
-    }
+  .technologies .skill-name {
+    font-size: 27px;
+  }
 
-    /* Additional Technologies */
-    .additional-technologies .content {
-        padding: 70px 0;
-    }
-    .additional-technologies .additional-technologies-heading {
-        font-size: 38px;
-        line-height: 54px;
-        margin-bottom: 52px;
-    }
+  .technologies .advanced-skill-div,
+  .technologies .regular-skill-div {
+    height: 18px;
+  }
 
-    /* Additional Technologies Skills */
-    .additional-technologies .additional-skill {
-        width: 50%;
-        font-size: 22px;
-    }
+  /* Additional Technologies */
+  .additional-technologies .content {
+    padding: 70px 0;
+  }
+  .additional-technologies .additional-technologies-heading {
+    font-size: 38px;
+    line-height: 54px;
+    margin-bottom: 52px;
+  }
+
+  /* Additional Technologies Skills */
+  .additional-technologies .additional-skill {
+    width: 50%;
+    font-size: 22px;
+  }
 }
 
-@media screen and (max-width: 576px){
-    /* Banner */
-    /* Banner Left Content */
-    .banner .left-content h1 {
-        font-size: 44px;
-    }
+@media screen and (max-width: 576px) {
+  /* Banner */
+  /* Banner Left Content */
+  .banner .left-content h1 {
+    font-size: 44px;
+  }
 
-    .banner .left-content h2 {
-        font-size: 44px;
-    }
+  .banner .left-content h2 {
+    font-size: 44px;
+  }
 
+  /* PROJECTS */
+  .projects .content {
+    padding-top: 0;
+  }
 
-    /* PROJECTS */
-    .projects .content {
-        padding-top: 0;
-    }
+  .projects .projects-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
 
-    .projects .projects-heading {
-        font-size: 42px;
-        margin-bottom: 40px;
-    }
+  /* Projects Cards */
+  .projects .project-card-parent {
+    padding: 0 18px;
+  }
 
-    /* Projects Cards */
-    .projects .project-card-parent {
-        padding: 0 18px;
-    }
+  .projects .slick-dots li button:before {
+    color: white;
+  }
 
-    .projects .slick-dots li button:before {
-        color: white;
-    }
+  /* Technologies */
+  /* Technologies Heading */
+  .technologies .technologies-heading {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
 
-    /* Technologies */
-    /* Technologies Heading */
-    .technologies .technologies-heading {
-        font-size: 42px;
-        margin-bottom: 40px;
-    }
+  .technologies .skill-name {
+    font-size: 26px;
+  }
 
-    .technologies .skill-name {
-        font-size: 26px;
-    }
+  .technologies .skill-level {
+    font-size: 17px;
+  }
 
-    .technologies .skill-level {
-        font-size: 17px;
-    }
+  /* Additional Technologies */
+  .additional-technologies .additional-technologies-heading {
+    font-size: 36px;
+    line-height: 50px;
+    margin-bottom: 46px;
+  }
 
-    /* Additional Technologies */
-    .additional-technologies .additional-technologies-heading {
-        font-size: 36px;
-        line-height: 50px;
-        margin-bottom: 46px;
-    }
-
-    /* Additional Technologies Skills */
-    .additional-technologies .additional-skill {
-        width: 100%;
-        margin-bottom: 24px;
-    }
+  /* Additional Technologies Skills */
+  .additional-technologies .additional-skill {
+    width: 100%;
+    margin-bottom: 24px;
+  }
 }
 
 @media screen and (max-width: 470px) {
-    /* Global Elements */
-    .link-button {
-        padding: 16px 44px;
-        font-size: 16px;
-    }
+  /* Global Elements */
+  .link-button {
+    padding: 16px 44px;
+    font-size: 16px;
+  }
 
-    /* Banner */
-    /* Banner Left Content */
-    .banner .left-content {
-        height: 300px;
-    }
-    .banner .left-content h1 {
-        font-size: 35px;
-    }
+  /* Banner */
+  /* Banner Left Content */
+  .banner .left-content {
+    height: 300px;
+  }
+  .banner .left-content h1 {
+    font-size: 35px;
+  }
 
-    .banner .left-content h2 {
-        font-size: 35px;
-    }
+  .banner .left-content h2 {
+    font-size: 35px;
+  }
 
-    .banner .left-content p {
-        font-size: 16px;
-    }
+  .banner .left-content p {
+    font-size: 16px;
+  }
 
-    /* PROJECTS */
-    .projects .content {
-        padding-top: 0;
-    }
+  /* PROJECTS */
+  .projects .content {
+    padding-top: 0;
+    padding-bottom: 34px;
+  }
 
-    /* Projects Cards */
-    .projects .project-card-parent {
-        padding:  0 8px;
-    }
+  /* Projects Cards */
+  .projects .project-card-parent {
+    padding: 0 8px;
+  }
 
-    .projects .projects-card .img-holder {
-        height: 160px;
-    } 
+  .projects .projects-card .img-holder {
+    height: 160px;
+  }
 
-    .projects .projects-card .link-button {
-        padding: 12px 18px;
-        font-size: 14px;
-    }
+  .projects .projects-card .link-button {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
 
+  /* Technologies */
+  /* Technologies Heading */
+  .technologies .technologies-heading {
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
 
-    /* Technologies */
-    /* Technologies Heading */
-    .technologies .technologies-heading {
-        font-size: 38px;
-        margin-bottom: 40px;
-    }
+  .technologies .skill-name {
+    font-size: 22px;
+  }
 
-    .technologies .skill-name {
-        font-size: 22px;
-    }
+  .technologies .skill-level {
+    font-size: 16px;
+  }
 
-    .technologies .skill-level {
-        font-size: 16px;
-    }
+  .technologies .advanced-skill-div,
+  .technologies .regular-skill-div {
+    height: 17px;
+    margin-bottom: 24px;
+  }
 
-    .technologies .advanced-skill-div {
-        height: 22px;
-    }
+  /* Additional Technologies */
+  .additional-technologies .content {
+    padding: 40px 0 0;
+  }
 
-    .technologies .regular-skill-div {
-        height: 22px;
-    }
+  .additional-technologies .additional-technologies-heading {
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
 
-    /* Additional Technologies */
-    .additional-technologies .content {
-        padding: 50px 0;
-    }
+  /* Additional Technologies Skills */
+  .additional-technologies .additional-skill {
+    margin-bottom: 18px;
+  }
 
-    .additional-technologies .additional-technologies-heading {
-        font-size: 28px;
-        line-height: 40px;
-        margin-bottom: 46px;
-    }
+  /* About me */
+  .about-me .about-me-heading {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
 
-    /* Additional Technologies Skills */
-    .additional-technologies .additional-skill {
-        margin-bottom: 18px;
-    }
-
-    /* About me */
-    .about-me .about-me-heading {
-        margin-bottom: 28px;
-    }
-
-    .about-me .about-me-para {
-        font-size: 17px;
-    }
+  .about-me .about-me-para {
+    font-size: 17px;
+  }
 }
 
-@media screen and (max-width: 370px){
-    /* Global Elements */
-    .link-button {
-        padding: 12px 36px;
-    }
+@media screen and (max-width: 370px) {
+  /* Global Elements */
+  .link-button {
+    padding: 12px 36px;
+  }
 
-    /* Global Go to Top Button */
-    #top-arrow {
-        bottom: 10px;
-        right: 14px;
-        width: 34px;
-        height: 34px;
-        font-size: 16px;
-    }
+  /* Global Go to Top Button */
+  #top-arrow {
+    bottom: 10px;
+    right: 14px;
+    width: 34px;
+    height: 34px;
+    font-size: 16px;
+  }
 
-    /* Header */
+  /* Header */
 
-    /* Header Logo */
-    header .logo img {
-        width: 100px;
-    }
+  /* Header Logo */
+  header .logo img {
+    width: 100px;
+  }
 
-    /* Header Nav */
-    header .header-nav {
-        padding-top: 20px;
-    }
+  /* Header Nav */
+  header .header-nav {
+    padding-top: 20px;
+  }
 
-    header .nav-item .nav-link {
-        font-size: 14px;
-    }
+  header .nav-item .nav-link {
+    font-size: 14px;
+  }
 
-    /* Header Social Links */
-    header .header-social-links .social-link {
-        font-size: 22px;
-    }
+  /* Header Social Links */
+  header .header-social-links .social-link {
+    font-size: 22px;
+  }
 
-    /* Banner */
-    /* Banner Left Content */
-    .banner .left-content {
-        height: 260px;
-    }
+  /* Banner */
+  /* Banner Left Content */
+  .banner .left-content {
+    height: 260px;
+  }
 
-    .banner .left-content h1 {
-        font-size: 26px;
-    }
+  .banner .left-content h1 {
+    font-size: 26px;
+  }
 
-    .banner .left-content h2 {
-        font-size: 26px;
-        margin-bottom: 20px;
-    }
+  .banner .left-content h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
 
-    .banner .left-content p {
-        font-size: 14px;
-        line-height: 20px;
-    }
+  .banner .left-content p {
+    font-size: 14px;
+    line-height: 20px;
+  }
 
-    /* Banner Right Content */
-    .banner .right-content img {
-        width: 400px;
-    }
+  /* Banner Right Content */
+  .banner .right-content img {
+    width: 400px;
+  }
 
-    /* PROJECTS */
-    .projects .content {
-        padding-bottom: 50px;
-    }
+  /* PROJECTS */
+  .projects .content {
+    padding-bottom: 50px;
+  }
 
-    .projects .projects-heading {
-        font-size: 40px;
-        margin-bottom: 30px;
-    }
+  .projects .projects-heading {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
 
-    /* Projects Cards */
-    .projects .project-card-parent {
-        padding: 0 4px;
-    }
+  /* Projects Cards */
+  .projects .project-card-parent {
+    padding: 0 4px;
+  }
 
-    .projects .projects-card {
-        padding: 14px;
-    }
-    .projects .projects-card .img-holder {
-        height: 120px;
-    }
+  .projects .projects-card {
+    padding: 14px;
+  }
+  .projects .projects-card .img-holder {
+    height: 120px;
+  }
 
-    .projects .projects-card .card-detail{
-        min-height: 160px;
-    }
+  .projects .projects-card .card-detail {
+    min-height: 160px;
+  }
 
-    .projects .projects-card h3 {
-        font-size: 18px;
-        line-height: 24px;
-    }
+  .projects .projects-card h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
 
-    .projects .projects-card p {
-        font-size: 14px;
-    }
+  .projects .projects-card p {
+    font-size: 14px;
+  }
 
-    .projects .projects-card .link-button {
-        font-size: 13px;
-        padding: 8px 6px;
-    }
+  .projects .projects-card .link-button {
+    font-size: 13px;
+    padding: 8px 6px;
+  }
 
+  /* Technologies */
+  /* Technologies Heading */
+  .technologies .technologies-heading {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
 
-    /* Technologies */
-    /* Technologies Heading */
-    .technologies .technologies-heading {
-        font-size: 30px;
-        margin-bottom: 40px;
-    }
+  .technologies .skill-name {
+    font-size: 18px;
+  }
 
-    .technologies .skill-name {
-        font-size: 18px;
-    }
+  .technologies .skill-level {
+    font-size: 14px;
+  }
 
-    .technologies .skill-level {
-        font-size: 14px;
-    }
+  .technologies .advanced-skill-div,
+  .technologies .regular-skill-div {
+    height: 16px;
+  }
 
-    .technologies .advanced-skill-div {
-        height: 20px;
-    }
+  /* Additional Technologies */
+  .additional-technologies .content {
+    padding: 20px 0;
+  }
 
-    .technologies .regular-skill-div {
-        height: 20px;
-    }
+  .additional-technologies .additional-technologies-heading {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
 
-    /* Additional Technologies */
-    .additional-technologies .content {
-        padding: 20px 0;
-    }
+  /* Additional Technologies Skills */
+  .additional-technologies .additional-skill {
+    margin-bottom: 18px;
+    font-size: 18px;
+  }
 
-    .additional-technologies .additional-technologies-heading {
-        font-size: 24px;
-        line-height: 34px;
-        margin-bottom: 36px;
-    }
+  /* About me */
+  .about-me .about-me-heading {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
 
-    /* Additional Technologies Skills */
-    .additional-technologies .additional-skill {
-        margin-bottom: 18px;
-    }
-
-    /* About me */
-    .about-me .about-me-heading {
-        font-size: 38px;
-        margin-bottom: 20px;
-    }
-
-    .about-me .about-me-para {
-        font-size: 16px;
-    }
+  .about-me .about-me-para {
+    font-size: 16px;
+  }
 }
