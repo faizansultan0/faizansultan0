@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Sultan Faizan Bahoo</h1>
-<h3 align="center">MERN Stack developer</h3>
+<h3 align="center">MERN Stack Developer</h3>
 
 - 🔭 I’m currently working on **MERN Projects**
 
